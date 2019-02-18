@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/viewSequence"
+        android:text="Pressione em jogar e diga qual é o próximo item da sequencia!"
+        android:id="@+id/viewSequence"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorAccent"
+        android:elegantTextHeight="true"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="206dp"
+        android:background="@drawable/ic_play"
+        android:onClick="LevelOne"
+        android:layout_gravity="center"
+        android:id="@+id/jogar"
+        />
+
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultado"
+        android:text=""
+        android:textColor="#0F8FFF"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        android:orientation="horizontal"
+        <Button
+            android:id="@+id/option1"
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Ganhou"/>
+        <Button
+            android:text=" "
+            android:id="@+id/option2"
+            android:onClick="Perdeu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text=" "
+            android:id="@+id/option3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="Perdeu"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/option4"
+            android:onClick="Perdeu"/>
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Jogar Novamente"
+        android:id="@+id/jogar_novamente"
+        android:onClick="LevelOne"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Sair"
+        android:id="@+id/sair"
+        android:onClick="Sair"/>
+
+</LinearLayout>
